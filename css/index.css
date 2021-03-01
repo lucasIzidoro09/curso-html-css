@@ -1,0 +1,56 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #596275;
+    border-bottom: 10px solid #e66767 ;
+    padding:10px 20px
+}
+
+h1{
+    color: #fff;
+    font-family: 'Press Start 2P',  Arial, Helvetica, sans-serif;
+    font-size: 30;
+}
+
+nav{
+ text-align: right; /*como o bloco ganha o comportamento de palavra, eu posso usar o justify-content e jogar pra direita */
+}
+
+a{
+    display: inline-flex;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Fira Code',  Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-right: 30px ;
+}
+
+a::before{
+    content: "";
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
+    background-color: #e66767;
+
+}
+
+
+#button{
+    display: inline-block;
+    background-color: #e66767;
+    padding:18px 20px; 
+    box-shadow: 5px 5px 0 black;
+    margin: 0;
+    color:#fff;
+    transition: transform 100ms linear;
+}
+#button:hover{
+transform: scale(1.08);
+background-color: #fff;
+color:#e66767;
+
+}
